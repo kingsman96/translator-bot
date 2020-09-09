@@ -9,6 +9,6 @@ The code in bot.py is a telegram bot that can help you with inline (and not) tra
 
 ![Second screenshot](https://raw.githubusercontent.com/kingsman96/translator-bot/master/second.png)
 
-The code in bot2.py is the same bot but i have added a [text-to-speach](https://gtts.readthedocs.io/en/latest/module.html#) module that module that reads the text message translated by google. Instead of replying with a dot, try to replay with a "#" followed by the source language code.
+The code in bot2.py is the same bot but i have added a [text-to-speach](https://gtts.readthedocs.io/en/latest/module.html#) module that reads the text message translated by google. Instead of replying with a dot, try to replay with a "#" followed by the source language code.
 
 ![Third screenshot](https://raw.githubusercontent.com/kingsman96/translator-bot/master/third.png)
