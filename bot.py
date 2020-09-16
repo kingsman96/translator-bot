@@ -8,9 +8,7 @@ from telebot import types
 
 
 
-#TOKEN='INSERT HERE BOT TOKEN (FROM @BOTFATHER)'
-
-TOKEN = "1006818444:AAGypab6s8nNRzMd94ExvmjqbbiL5wGENfM"
+TOKEN='INSERT HERE BOT TOKEN (FROM @BOTFATHER)'
 
 bot = telebot.TeleBot(token=TOKEN)
 
