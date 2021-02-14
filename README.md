@@ -1,7 +1,7 @@
 # translator-telegram-bot
 
 The code in bot.py is a telegram bot that can help you with inline (and not) translations!
->This python code use [googletrans](https://pypi.org/project/googletrans/) module to translate sentences.
+>This python code use [pygoogletranslation](https://github.com/Saravananslb/py-googletranslation) module to translate sentences.
 
 >I also used [telebot](https://github.com/eternnoir/pyTelegramBotAPI) and [long polling](https://en.wikipedia.org/wiki/Push_technology#Long_polling) methods.
 
