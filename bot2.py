@@ -1,4 +1,4 @@
-from googletrans import Translator
+from pygoogletranslation import Translator
 import telebot, datetime, time
 from time import sleep
 from telebot import types
@@ -27,7 +27,10 @@ def send_welcome(message):
                 +' pen is on the table</code>.\n\nOr type the sentence you'
                 +' want to translate (or forward it to the bot) and then reply to '
                 +'that message with a dot followed by the language you want to '
-                +'translate into (eg <code>.en</code>).\n\nType /lang to see available '
+                +'translate into (eg <code>.en</code>).\nFor a faster usage it\'s '
+                +'available the inline mode, id est you can type <code>@botusername '
+                +'dest sentence</code> to translate <i>sentence</i> into <i>dest</i>.'
+                +'\n\nType /lang to see available '
                 +'languages and how to encode them, in <b>src</b> or <b>dest</b> field.')
     bot.send_message(chat_id, text, parse_mode="HTML", reply_to_message_id=msg_id)
 
@@ -225,7 +228,7 @@ LANGUAGES = {
     'tg': 'tajik', 'ta': 'tamil', 'te': 'telugu', 'th': 'thai', 'tr': 'turkish',
     'uk': 'ukrainian', 'ur': 'urdu', 'uz': 'uzbek', 'vi': 'vietnamese',
     'cy': 'welsh', 'xh': 'xhosa', 'yi': 'yiddish','yo': 'yoruba', 'zu': 'zulu',
-    'fil': 'Filipino', 'he': 'Hebrew'}
+    'fil': 'Filipino', 'he': 'Hebrew', 'auto': 'auto', '': 'idk'}
 
 # sorting dictionary of languages by value
 {k: v for k, v in sorted(LANGUAGES.items(), key=lambda item: item[1])}
